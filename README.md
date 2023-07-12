@@ -190,7 +190,7 @@ kubectl logs podname
 ./script.sh
 kubectl delete -f statefulset ,cronjob,configmap  etc
 this is for k8s below 1.27 version 
-the images use have kubecrnet 
+the images use have kubernet is must so we use bitnami/kubectl
 also alpine/k8s:1.2222 version have both awscli and k8s 
 init container is used to cahnege the permissions also cronjob have default 0600 access 
 also we need to change access mode into read write many if multiple containers at same time reqires the access 
